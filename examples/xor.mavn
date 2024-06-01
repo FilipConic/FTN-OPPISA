@@ -1,0 +1,32 @@
+// code that calculates bitwise xor of 7 and 5
+
+_mem m1 15;
+_mem m2 5;
+_mem m3 0;
+
+_reg r1;
+_reg r2;
+_reg r3;
+_reg r4;
+_reg r5;
+_reg r6;
+_reg r7;
+_reg r8;
+_reg r9;
+_reg r10;
+
+_func main;
+    la   r1, m1;
+    lw   r2, 0(r1);
+    la   r3, m2;
+    lw   r4, 0(r3);
+
+    not  r5, r2;
+    not  r6, r4;
+    and  r7, r4, r5;
+    and  r8, r2, r6;
+
+    or   r9, r8, r7;
+    la   r10, m3;
+    sw   r9, 0(r10);
+    

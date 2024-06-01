@@ -1,0 +1,9 @@
+﻿  FiniteStateMachine.cpp
+  IR.cpp
+  LexicalAnalysis.cpp
+  LivenessAnalysis.cpp
+  SyntaxAnalysis.cpp
+  Token.cpp
+  main.cpp
+  Generating Code...
+  LexicalAnalysis.vcxproj -> C:\Users\Korisnik\Desktop\projekat\src\Debug\LexicalAnalysis.exe

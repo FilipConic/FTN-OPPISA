@@ -1,0 +1,29 @@
+_mem m1 6;
+_mem m2 5;
+_mem m3 0;
+
+_reg r1;
+_reg r2;
+_reg r3;
+_reg r4;
+_reg r5;
+_reg r6;
+_reg r7;
+_reg r8;
+
+_func main;
+	la		r1, m1;
+	lw		r2, 0(r1);
+	la		r3, m2;
+	lw		r4, 0(r3);
+	li		r5, 1;
+	li		r6, 0;
+lab:
+	add		r6, r6, r2;
+	sub		r7, r5, r4;
+	addi	r5, r5, 1;
+	bltz	r7, lab;
+	
+	la		r8, m3;
+	sw		r6, 0(r8);
+	nop;
