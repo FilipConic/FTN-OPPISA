@@ -25,7 +25,7 @@ int main()
 
 		LexicalAnalysis lex;
 
-		if (!lex.readInputFile(fileNames[1]))
+		if (!lex.readInputFile(fileNames[0]))
 			throw runtime_error("\nException! Failed to open input file!\n");
 
 		lex.initialize();

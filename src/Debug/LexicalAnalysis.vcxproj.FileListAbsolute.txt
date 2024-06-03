@@ -1,1 +1,2 @@
 C:\Users\Korisnik\Desktop\projekat\src\Debug\LexicalAnalysis.exe
+C:\Users\Korisnik\Desktop\Faculty\projekat\src\Debug\LexicalAnalysis.exe

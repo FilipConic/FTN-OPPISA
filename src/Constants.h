@@ -11,7 +11,7 @@ const int INVALID_STATE = -2;
 /**
  * Number of states in FSM
  */
-const int NUM_STATES = 50;
+const int NUM_STATES = 52;
 
 /**
  * Number of supported characters

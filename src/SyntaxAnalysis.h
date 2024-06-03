@@ -38,7 +38,7 @@ public:
 
 	/**
 	* Destructor that ensures that all pointers are deleted when syntax
-	  analysis object goes out of scope
+	* analysis object goes out of scope
 	*/
 	~SyntaxAnalysis();
 

@@ -273,6 +273,9 @@ std::string Instruction::toString()
 		break;
 	case I_NOT:
 		ret += "not \'d, \'s";
+		break;
+	case I_BNE:
+		ret += "bne \'s, \'s, \'l";
 	}
 
 	return ret;

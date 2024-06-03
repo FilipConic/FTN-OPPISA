@@ -541,6 +541,28 @@ void SyntaxAnalysis::E()
 		i->addDst(dst);
 		i->addSrc(src1);
 		break;
+	case T_BNE:
+		eat(T_BNE);
+		i = new Instruction(I_BNE);
+
+		glance(T_R_ID);
+		src1 = findVariable();
+		eat(T_R_ID);
+		eat(T_COMMA);
+
+		glance(T_R_ID);
+		src2 = findVariable();
+		eat(T_R_ID);
+		eat(T_COMMA);
+
+		glance(T_ID);
+		dst = findLabel(currentToken->getValue());
+		eat(T_ID);
+
+		i->addSrc(src1);
+		i->addSrc(src2);
+		i->addSrc(dst);
+		break;
 	default:
 		err = true;
 		std::cerr << "No valid token found!" << std::endl;

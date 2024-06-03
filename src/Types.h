@@ -45,6 +45,7 @@ enum TokenType
 	T_AND,          // and
 	T_OR,           // or
 	T_NOT,          // not
+	T_BNE,          // bne
 
 	// operators
 	T_COMMA,		//,
@@ -79,7 +80,8 @@ enum InstructionType
 	// new instructions added
 	I_AND,
 	I_OR, 
-	I_NOT
+	I_NOT,
+	I_BNE
 };
 
 /**

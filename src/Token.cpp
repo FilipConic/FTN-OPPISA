@@ -109,6 +109,7 @@ string Token::tokenTypeToString(TokenType t)
 		case T_AND:             return "[T_AND]";
 		case T_OR:              return "[T_OR]";
 		case T_NOT:             return "[T_NOT]";
+		case T_BNE:             return "[T_BNE]";
 		default:				return "";
 	}
 }

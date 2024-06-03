@@ -243,6 +243,12 @@ void LivenessAnalysis::setPredAndSucc()
 				labeledInstruction = findInstructionAfterFunc(labeledInstruction, instrs);
 			if (labeledInstruction != nullptr)
 				addEachother(*labeledInstruction, curr);
+		case I_BNE:
+			labeledInstruction = findInstructionWithLabel(curr.getSrc().back(), instrs);
+			if (labeledInstruction->isFunc())
+				labeledInstruction = findInstructionAfterFunc(labeledInstruction, instrs);
+			if (labeledInstruction != nullptr)
+				addEachother(*labeledInstruction, curr);
 		}
 		prevInstruction = currentInstruction;
 		++currentInstruction;
